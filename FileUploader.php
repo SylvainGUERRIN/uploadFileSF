@@ -30,9 +30,9 @@ class FileUploader
         if($oldImage !== null) {
             $filesystem = new Filesystem();
             if($choiceTarget === 1) {
-                $url = 'url pour les avatars' . $oldImage;
+                $url = '../url/pour/les/avatars' . $oldImage;
             }else {
-                $url = 'url pour les images' . $oldImage;
+                $url = '../url/pour/les/images' . $oldImage;
             }
             $verif = $filesystem->exists($url);
             if ($verif === true) {
